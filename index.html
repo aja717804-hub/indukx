@@ -1431,6 +1431,8 @@
                                                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 mt-2 border-t border-white/10 text-xs">
                                                             <div><p className="text-purple-300">Tempat Lahir</p><p className="font-semibold">{alumni.pob}</p></div>
                                                             <div><p className="text-purple-300">Tanggal Lahir</p><p className="font-semibold">{alumni.dob}</p></div>
+                                                            <div><p className="text-purple-300">Nama Ayah</p><p className="font-semibold">{alumni.dob}</p></div>
+                                                            <div><p className="text-purple-300">Nama Ibu</p><p className="font-semibold">{alumni.dob}</p></div>
                                                             <div><p className="text-purple-300">Tanggal Lulus</p><p className="font-semibold">{alumni.graduationDate || "-"}</p></div>
                                                             <div><p className="text-purple-300">Rata-Rata Ijazah</p><p className="font-bold text-yellow-300">{alumni.graduationAvg || "-"}</p></div>
                                                         </div>
@@ -2035,6 +2037,16 @@
                                             </select>
                                         </div>
                                         <div>
+                                             <label className="block font-bold text-slate-500 mb-1 uppercase tracking-wider">Nama Ayah</label>
+                                            <input type="text" required placeholder="Contoh: Zahran" value={studentForm.name} onChange={(e) => setStudentForm({ ...studentForm, nis: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
+                                        </div>
+                                        <div>
+                                             <label className="block font-bold text-slate-500 mb-1 uppercase tracking-wider">Nama Ibu</label>
+                                            <input type="text" required placeholder="Contoh: Yaya" value={studentForm.name} onChange={(e) => setStudentForm({ ...studentForm, nis: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
+                                        </div>
+                                        <div>
+
+                                            
                                             <label className="block font-bold text-slate-500 mb-1 uppercase tracking-wider">Kelas Terdaftar</label>
                                             <select value={studentForm.currentClass} onChange={(e) => setStudentForm({ ...studentForm, currentClass: e.target.value })} className="w-full px-3 py-2 border rounded-lg outline-none bg-white">
                                                 {settings.classes.map(c => <option key={c} value={c}>{c}</option>)}
