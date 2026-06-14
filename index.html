@@ -1431,7 +1431,6 @@
                                                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4 mt-2 border-t border-white/10 text-xs">
                                                             <div><p className="text-purple-300">Tempat Lahir</p><p className="font-semibold">{alumni.pob}</p></div>
                                                             <div><p className="text-purple-300">Tanggal Lahir</p><p className="font-semibold">{alumni.dob}</p></div>
-                                                            <div><p className="text-purple-300">Nama Ibu</p><p className="font-semibold">{alumni.dob}</p></div>
                                                             <div><p className="text-purple-300">Tanggal Lulus</p><p className="font-semibold">{alumni.graduationDate || "-"}</p></div>
                                                             <div><p className="text-purple-300">Rata-Rata Ijazah</p><p className="font-bold text-yellow-300">{alumni.graduationAvg || "-"}</p></div>
                                                         </div>
@@ -1540,9 +1539,8 @@
                                                 <div className="text-center border-b-4 border-double border-slate-900 pb-3 mb-6">
                                                     <h1 className="text-lg font-bold uppercase tracking-wide">YAYASAN ANNIHAYAH KARAWANG</h1>
                                                     <h2 className="text-xl font-extrabold text-emerald-800 tracking-wider">SDIT ANNIHAYAH</h2>
-                                                    <p className="text-[9px] text-slate-500 italic">SK Ijin Operasional No: 503/4853/5/IPSS/X/DPMPTSP/2019 • NPSN: 69993044 </p>
-                                                    <p className="text-xs font-semibold text-slate-600">Dusun Krajan Satu Desa Sukamerta Kecamatan Rawamerta - Karawang</p>
-                                                  <p className="text-xs font-semibold text-slate-600">E-mail : annihayah.sdit@gmail.com</p>
+                                                    <p className="text-[9px] text-slate-500 italic">Izin Operasional No: 421.1/658-Bid.SD/2016 • NSS: 102021203001 • NISN: 69947990</p>
+                                                    <p className="text-xs font-semibold text-slate-600">Alamat: Jl. Syekh Quro, Plawad, Karawang Timur, Karawang, Jawa Barat 41314</p>
                                                 </div>
 
                                                 <div className="text-center mb-5">
@@ -1715,9 +1713,8 @@
                                                 <div className="text-center border-b-4 border-double border-slate-900 pb-3 mb-6">
                                                     <h1 className="text-lg font-bold uppercase tracking-wide">YAYASAN ANNIHAYAH KARAWANG</h1>
                                                     <h2 className="text-xl font-extrabold text-emerald-800 tracking-wider">SDIT ANNIHAYAH</h2>
-                                                    <p className="text-[9px] text-slate-500 italic">SK Ijin Operasional : 503/4853/5/IPSS/X/DPMPTSP/2019 NPSN : 699930344 </p>
-                                                    <p className="text-xs font-semibold text-slate-600">Dusun Krajan Satu Desa Sukamerta Kecamatan Rawamerta - Karawang </p>
-                                                  <p className="text-xs font-semibold text-slate-600">E-mail : annihayah.sdit@gmail.com </p>
+                                                    <p className="text-[9px] text-slate-500 italic">Izin Operasional No: 421.1/658-Bid.SD/2016 • NSS: 102021203001 • NISN: 69947990</p>
+                                                    <p className="text-xs font-semibold text-slate-600">Alamat: Jl. Syekh Quro, Plawad, Karawang Timur, Karawang, Jawa Barat 41314</p>
                                                 </div>
 
                                                 <div className="text-center mb-5">
@@ -2021,14 +2018,6 @@
                                             <input type="text" required placeholder="Contoh: 0123456781" value={studentForm.nisn} onChange={(e) => setStudentForm({ ...studentForm, nisn: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
                                         </div>
                                         <div>
-                                             <label className="block font-bold text-slate-500 mb-1 uppercase tracking-wider">Nama Ayah</label>
-                                            <input type="text" placeholder="Contoh: Zahran" value={studentForm.pob} onChange={(e) => setStudentForm({ ...studentForm, pob: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
-                                        </div>
-                                        <div>
-                                            <label className="block font-bold text-slete-500 mb-1 uppercase tracking-wider">Nama Ibu</label>
-                                            <input type="text" placeholder="Contoh: Yaya" value={studentForm.pob} onChange={(e) => setStudentForm({ ...studentForm, pob: e.target.value })} className="w-full px-3 py-2 border rounded-lg outline-none bg-white">
-                                        </div>
-                                        <div>
                                             <label className="block font-bold text-slate-500 mb-1 uppercase tracking-wider">Tempat Lahir</label>
                                             <input type="text" placeholder="Contoh: Karawang" value={studentForm.pob} onChange={(e) => setStudentForm({ ...studentForm, pob: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
                                         </div>
@@ -2043,19 +2032,19 @@
                                                 <option value="Perempuan">Perempuan</option>
                                             </select>
                                         </div>
-                                        </div>
+                                        <div>
                                             <label className="block font-bold text-slate-500 mb-1 uppercase tracking-wider">Kelas Terdaftar</label>
                                             <select value={studentForm.currentClass} onChange={(e) => setStudentForm({ ...studentForm, currentClass: e.target.value })} className="w-full px-3 py-2 border rounded-lg outline-none bg-white">
                                                 {settings.classes.map(c => <option key={c} value={c}>{c}</option>)}
                                             </select>
                                         </div>
-                                        </div>
+                                        <div>
                                             <label className="block font-bold text-slate-500 mb-1 uppercase tracking-wider">TA Masuk</label>
                                             <select value={studentForm.academicYear} onChange={(e) => setStudentForm({ ...studentForm, academicYear: e.target.value })} className="w-full px-3 py-2 border rounded-lg outline-none bg-white">
                                                 {settings.academicYears.map(y => <option key={y} value={y}>{y}</option>)}
                                             </select>
                                         </div>
-                                        </div>
+                                        <div>
                                             <label className="block font-bold text-slate-500 mb-1 uppercase tracking-wider font-bold text-emerald-700">Status Keberadaan</label>
                                             <select value={studentForm.status} onChange={(e) => setStudentForm({ ...studentForm, status: e.target.value })} className="w-full px-3 py-2 border rounded-lg outline-none bg-white font-bold">
                                                 <option value="Aktif">Aktif</option>
