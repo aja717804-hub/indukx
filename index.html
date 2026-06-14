@@ -2040,10 +2040,10 @@
                                             <input type="text" placeholder="Contoh: Zahran" value={studentForm.pob} onChange={(e) => setStudentForm({ ...studentForm, pob: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
                                         </div>
                                         <div>
-                                             <label className="block font-bold text-slate-500 mb-1 uppercase tracking-wider">Nama Ibu</label>
-                                            <input type="text" placeholder="Contoh: Yaya" value={studentForm.pob} onChange={(e) => setStudentForm({ ...studentForm, pob: e.target.value })} className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-emerald-500 outline-none" />
+                                            <label className="block font-bold text-slete-500 mb-1 uppercase tracking-wider">Nama Ibu</label>
+                                            <input type="text" placeholder="Contoh: Yaya" value={studentForm.pob} onChange={(e) => setStudentForm({ ...studentForm, pob: e.target.value })} className="w-full px-3 py-2 border rounded-lg outline-none bg-white">
+                                            </div>
                                         </div>
-                                        <div>
                                             <label className="block font-bold text-slate-500 mb-1 uppercase tracking-wider">Kelas Terdaftar</label>
                                             <select value={studentForm.currentClass} onChange={(e) => setStudentForm({ ...studentForm, currentClass: e.target.value })} className="w-full px-3 py-2 border rounded-lg outline-none bg-white">
                                                 {settings.classes.map(c => <option key={c} value={c}>{c}</option>)}
